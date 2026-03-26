@@ -25,14 +25,11 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.composenavigationapp.ui.theme.ComposeNavigationAppTheme
 
-// ... (código existente da MainActivity)
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             ComposeNavigationAppTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -98,7 +95,6 @@ fun ScreenB(navController: NavController, message: String?) {
     }
 }
 
-// Pré-visualizações (opcional)
 @Preview(showBackground = true)
 @Composable
 fun ScreenAPreview() {
